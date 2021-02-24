@@ -1,2 +1,4 @@
-fastapi,
-uvicornnp
+fastapi
+uvicorn
+sqlalchemy
+mysql-connector-python
