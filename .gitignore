@@ -1,7 +1,7 @@
-__pycache__/*
-./**/__pycache__/*
+__pycache__/
+./**/__pycache__/
 ./venv
-./db/data/*
+./db/data/
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
