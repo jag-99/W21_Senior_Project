@@ -3,7 +3,7 @@
 CONFIG = {
     "db_user": "estate",
     "db_pw": "password",
-    "db_host": "172.23.31.35",
+    "db_host": "127.0.0.1",
     "db_port": " 3306",
     "db_name": "real_estate"
 }

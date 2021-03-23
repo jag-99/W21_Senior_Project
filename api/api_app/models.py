@@ -13,16 +13,6 @@ class User(Base):
 
     items = relationship("Item", back_populates="owner")
 
-# class Item(Base):
-#     __tablename__ = "items"
-
-#     id = Column(Integer, primary_key=True, index=True)
-#     title = Column(String, index=True)
-#     description = Column(String, index=True)
-#     owner_id = Column(Integer, ForeignKey("users.id"))
-
-#     owner = relationship("User", back_populates="items")
-
 class Listing(Base):
     __tablename__ = "listings"
     id = Column(Integer, primary_key=True, index=True)
@@ -46,3 +36,13 @@ class Photo(Base):
     src = Column(String(256))
 
     listing = relationship("Listing", back_populates="photos")
+
+# class Item(Base):
+#     __tablename__ = "items"
+
+#     id = Column(Integer, primary_key=True, index=True)
+#     title = Column(String, index=True)
+#     description = Column(String, index=True)
+#     owner_id = Column(Integer, ForeignKey("users.id"))
+
+#     owner = relationship("User", back_populates="items")
