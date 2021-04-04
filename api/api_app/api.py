@@ -19,15 +19,26 @@ def get_db():
 async def root():
     return {"message": "Hello AWS Gods"}
 
-# User
+# USER
 @app.get("/user/{id}")
 async def get_user(id):
-    return {"message": f"Get User {id}"}
+    return {"data": crud.get_user(db, id)}
 
-# listing
+@app.get("/users/")
+async def get_users():
+    return {"data": crud.get_users()}
 
+@app.post("/user/")
+async def post_user():
+    pass
 
-# Photo
+# LISTING
+# Get listings
+# Get listing
+# POST listing
+# Delete listing
+
+# PHOTO - Will be a part of the listing
 
 # @app.post("/users/", response_model=schemas.User)
 # def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
